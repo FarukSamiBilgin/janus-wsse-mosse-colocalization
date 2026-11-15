@@ -1,0 +1,53 @@
+&CONTROL
+  calculation = 'bands'
+  verbosity = 'high'
+  prefix = 'pw'
+  outdir = './tmp'
+  pseudo_dir = './pseudos'
+  tefield = .true.
+  dipfield = .true.
+  disk_io = 'medium'
+/
+&SYSTEM
+  ibrav = 0
+  nat = 6
+  ntyp = 3
+  ecutwfc = 90
+  nbnd = 48
+  occupations = 'smearing'
+  smearing = 'cold'
+  degauss = 0.005
+  edir = 3
+  emaxpos = 0.05
+  eopreg = 0.10
+  eamp = 0.0
+  vdw_corr = 'dft-d3'
+/
+&ELECTRONS
+  conv_thr = 1e-08
+  mixing_beta = 0.3
+  electron_maxstep = 250
+  diagonalization = 'david'
+/
+ATOMIC_SPECIES
+  S 32.06 S.upf
+  Se 78.971 Se.upf
+  W 183.84 W.upf
+CELL_PARAMETERS angstrom
+  3.2349000000 0.0000000000 0.0000000000
+  -1.6174500000 2.8015055787 0.0000000000
+  0.0000000000 0.0000000000 30.0000000000
+ATOMIC_POSITIONS crystal
+  W 0.0000000000 0.0000000000 0.3895691816
+  S 0.3333333333 0.6666666667 0.3381731038
+  Se 0.3333333333 0.6666666667 0.4467407663
+  W 0.3333333333 0.6666666667 0.6048478615
+  S 0.6666666667 0.3333333333 0.5535698480
+  Se 0.6666666667 0.3333333333 0.6620992387
+K_POINTS crystal
+  5
+  0.00000000 0.00000000 0.00000000 1.0
+  0.33333333 0.33333333 0.00000000 1.0
+  0.50000000 0.00000000 0.00000000 1.0
+  0.31333333 0.31333333 0.00000000 1.0
+  0.29333333 0.29333333 0.00000000 1.0

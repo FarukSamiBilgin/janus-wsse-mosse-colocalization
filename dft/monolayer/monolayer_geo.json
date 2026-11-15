@@ -1,0 +1,14 @@
+{
+  "mosse": {
+    "a_Angstrom": 3.249994758481865,
+    "dip_Debye": null,
+    "E_Ry": null,
+    "atoms": []
+  },
+  "wsse": {
+    "a_Angstrom": 3.269997657053998,
+    "dip_Debye": null,
+    "E_Ry": null,
+    "atoms": []
+  }
+}
